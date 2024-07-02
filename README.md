@@ -1,5 +1,4 @@
 # tank_fire
-# 游戏名
 
 ```mermaid
 mindmap
