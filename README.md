@@ -54,11 +54,11 @@ mindmap
         --不同的敌人不同的音效
 ```
 
-![开发](实机演示画面上传/main_manu.png)
+![开发过程1](实机演示画面/main_manu.png)
 
-![开发](实机演示画面上传/openfire.png)
+![开发过程2](实机演示画面/openfire.png)
 
-![开发](实机演示画面上传/sightseeing.png)
+![开发过程3](实机演示画面/sightseeing.png)
 
 ### 菜单
 
