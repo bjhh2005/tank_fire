@@ -54,6 +54,12 @@ mindmap
         --不同的敌人不同的音效
 ```
 
+![开发](实机演示画面上传/main_manu.png)
+
+![开发](实机演示画面上传/openfire.png)
+
+![开发](实机演示画面上传/sightseeing.png)
+
 ### 菜单
 
 - [tank\_fire](#tank_fire)
