@@ -1,5 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+#include "ACharacter.h"
 #include "Kismet/GameplayStatics.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "BaseCharacter.h"
@@ -25,6 +26,8 @@ ABaseBullet::ABaseBullet()
 	//发射物移动组件
 	MovementComponent = CreateDefaultSubobject<UProjectileMovementComponent>("MovementComponent");
 
+	//设置生命周期为LifSpan
+	InitialLifeSpan = LifeSpan;
 }
 
 // Called when the game starts or when spawned
@@ -45,11 +48,63 @@ void ABaseBullet::OnBulletBeginOverlap(UPrimitiveComponent* OverlappedComponent,
 	//如果是BaseCharacter类 
 	ABaseCharacter* character = Cast<ABaseCharacter>(OtherActor);
 
+	//如果时AACharacter类
+	AACharacter* character2 = Cast<AACharacter>(OtherActor);
+
+	
+
 	if (character) {
-		character->TakeDamage(20.0);
+		character->TakeDamage(HeatHealth);
 		
+		//播放粒子特效
 		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ExplosionEffect, GetActorLocation());
 
+		//爆炸的时候播放声音
+		UGameplayStatics::PlaySoundAtLocation(this, ExplosionSound, GetActorLocation());
+
+		APlayerController* PlayerController = GetWorld()->GetFirstPlayerController();
+		if (PlayerController)
+		{
+			APawn* PlayerPawn = PlayerController->GetPawn();
+			if (PlayerPawn)
+			{
+				FVector PlayerLocation = PlayerPawn->GetActorLocation();
+				if (ExplosionSound) //!!!!
+				{
+					UGameplayStatics::PlaySoundAtLocation(this, ExplosionSound, PlayerLocation); //!!!!
+				}
+			}
+		}
+		Destroy();
+	}
+
+	if (character2) {
+		character2->TakeDamage(HeatHealth);
+
+		//播放粒子特效
+		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ExplosionEffect, GetActorLocation());
+
+		//爆炸的时候播放声音
+		UGameplayStatics::PlaySoundAtLocation(this, ExplosionSound, GetActorLocation());
+
+		//获取玩家控制器
+		APlayerController* PlayerController = GetWorld()->GetFirstPlayerController();
+		
+		//如果获取玩家
+		if (PlayerController)
+		{
+			//获取玩家
+			APawn* PlayerPawn = PlayerController->GetPawn();
+			if (PlayerPawn)
+			{
+				FVector PlayerLocation = PlayerPawn->GetActorLocation();
+				if (ExplosionSound) //!!!!
+				{
+					//播放爆炸音效
+					UGameplayStatics::PlaySoundAtLocation(this, ExplosionSound, PlayerLocation); //!!!!
+				}
+			}
+		}
 		Destroy();
 	}
 
@@ -59,6 +114,5 @@ void ABaseBullet::OnBulletBeginOverlap(UPrimitiveComponent* OverlappedComponent,
 void ABaseBullet::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 }
 
