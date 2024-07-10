@@ -8,6 +8,7 @@
 #include "myWheeledVehiclePawn.generated.h"
 
 class UHealthComponent;
+class USphereComponent;
 
 /**
  * 
@@ -19,6 +20,8 @@ class TANK_FIRE_API AmyWheeledVehiclePawn : public AWheeledVehiclePawn
 public:
 	AmyWheeledVehiclePawn();
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	USphereComponent* SphereCollision;
 
 	//by�?
 //伤害函数

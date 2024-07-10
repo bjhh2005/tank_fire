@@ -9,9 +9,15 @@
 #include "Kismet/GameplayStatics.h"
 #include "Components/StaticMeshComponent.h"
 #include "Particles/ParticleSystemComponent.h"
+#include"Components/SphereComponent.h"
 
 AmyWheeledVehiclePawn::AmyWheeledVehiclePawn()
 {
+
+	SphereCollision = CreateDefaultSubobject<USphereComponent>("SphereComponent");
+	SphereCollision->InitSphereRadius(500.0f);
+	SetRootComponent(SphereCollision);
+
 	//生命组件的设置
 	HealthComponent = CreateDefaultSubobject<UHealthComponent>(TEXT("HealthComponent"));
 
