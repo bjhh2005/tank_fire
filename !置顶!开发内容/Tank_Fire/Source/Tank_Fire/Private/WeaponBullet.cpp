@@ -5,6 +5,9 @@
 #include"Components/SphereComponent.h"
 #include"GameFramework/ProjectileMovementComponent.h"
 #include"MyActor.h" 
+#include"myWheeledVehiclePawn.h"
+#include"Particles/ParticleSystemComponent.h"
+#include"Runtime/Engine/Classes/Kismet/GameplayStatics.h"
 
 // Sets default values
 AWeaponBullet::AWeaponBullet()
@@ -29,13 +32,27 @@ void AWeaponBullet::BeginPlay()
 
 	MovementComponent->Velocity = GetActorForwardVector() * MovementComponent->InitialSpeed;
 	
+	SphereCollision->OnComponentBeginOverlap.AddDynamic(this, &AWeaponBullet::OnABeginOverlap);
+}
 
+void AWeaponBullet::OnABeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	AmyWheeledVehiclePawn* bbb = Cast<AmyWheeledVehiclePawn>(OtherActor);
+	
+	if (bbb) {
+		//UE_LOG(LogTemp, Display, TEXT("destroy~~~~~~~~~~~"));
+		bbb->TakeDamage(HeatHealth);
+		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), Bu_Emitter, this->GetActorTransform());
+		Destroy();
+	}
 }
 
 // Called every frame
 void AWeaponBullet::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	
 
 }
 

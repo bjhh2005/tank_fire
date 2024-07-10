@@ -4,6 +4,8 @@
 #include "EnemyAIController.h"
 #include"ACharacter.h"
 #include"EnemyAIPerceptionComponent.h"
+#include"BehaviorTree/BlackboardComponent.h"
+#include"myWheeledVehiclePawn.h"
 
 AEnemyAIController::AEnemyAIController()
 {
@@ -27,10 +29,21 @@ void AEnemyAIController::Tick(float deltaTime)
 {
 	Super::Tick(deltaTime);
 
-	AActor *player=AIPerception->GetPerceptionPlayer();
+	AActor *player=GetFocusActor();
 	if (player)
 	{
 
 		SetFocus(player);
 	}
+	else
+	{
+		SetFocus(nullptr);
+	}
+}
+
+AActor* AEnemyAIController::GetFocusActor()
+{
+	if (!GetBlackboardComponent())return nullptr;
+
+	return Cast<AActor>(GetBlackboardComponent()->GetValueAsObject(focusKeyName));
 }

@@ -16,7 +16,7 @@ class TANK_FIRE_API AEnemyAIController : public AAIController
 	
 public:
 
-	AEnemyAIController();
+	AEnemyAIController();	
 	virtual void OnPossess(APawn* inPawn)override;
 	virtual void Tick(float deltaTime)override;
 
@@ -25,5 +25,11 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Component")
 	class UEnemyAIPerceptionComponent* AIPerception;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI")
+	FName focusKeyName = "PlayerActor";
+
+private:
+
+	AActor* GetFocusActor();
 
 };

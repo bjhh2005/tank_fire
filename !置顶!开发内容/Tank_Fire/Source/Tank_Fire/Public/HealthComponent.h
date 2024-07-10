@@ -19,25 +19,24 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
+	//最大生命值
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Health")
+	float MaxHealth = 100;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Health")
+	float HeatHealth = 10;
 
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 
-
-	// 特效组件的引用
-	UPROPERTY()
-	UParticleSystemComponent* ActiveExplosionEffect;
-
+	
 
 private:
 
 	float health;
 
 public:	
-	//最大生命值
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Health")
-	float MaxHealth = 100;
 
 	float GetHealth() { return health; }
 

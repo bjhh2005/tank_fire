@@ -18,7 +18,6 @@ EBTNodeResult::Type UAttackPlayer::ExecuteTask(UBehaviorTreeComponent& OwnerComp
 
 	if (!controller || !blackboard)return EBTNodeResult::Failed;
 
-	//需要替换的地方
 	AACharacter* enemy = Cast<AACharacter>(controller->GetPawn());
 
 	if(!enemy)return EBTNodeResult::Failed;

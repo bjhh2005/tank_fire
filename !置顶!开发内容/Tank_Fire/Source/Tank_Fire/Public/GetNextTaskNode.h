@@ -25,4 +25,10 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "AI")
 	FBlackboardKeySelector AimLocationKey;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI")
+	bool isPlayerCenter = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI")
+	FBlackboardKeySelector   CenterKey;
 };

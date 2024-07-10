@@ -2,22 +2,6 @@
 
 
 #include "ACharacter.h"
-
-//å¯¼å…¥ç”Ÿå‘½ç»„ä»¶å¤´æ–‡ä»¶
-#include "HealthComponent.h"
-//å¯¼å…¥ç²’å­ç³»ç»Ÿå¤´æ–‡ä»¶
-#include "Particles/ParticleSystem.h"
-#include "Kismet/GameplayStatics.h"
-#include "Components/StaticMeshComponent.h"
-#include "Particles/ParticleSystemComponent.h"
-
-//AIç»„ä»¶
-#include "AIController.h"
-//åŒ…å«æ¸…é™¤è¡Œä¸ºæ ‘çš„ç»„ä»¶
-#include "BrainComponent.h"
-
-
-//å…¶ä»–
 #include"GameFramework/SpringArmComponent.h"
 #include"Camera/CameraComponent.h"
 #include"EnhancedInputComponent.h"
@@ -27,6 +11,15 @@
 #include"BaseWeapon.h"
 #include"TankHead1.h"
 #include"BehaviorTree/BehaviorTree.h"
+//µ¼ÈëÉúÃü×é¼şÍ·ÎÄ¼ş
+#include "HealthComponent.h"
+//µ¼ÈëÁ£×ÓÏµÍ³Í·ÎÄ¼ş
+#include "Particles/ParticleSystem.h"
+#include "Kismet/GameplayStatics.h"
+#include "Components/StaticMeshComponent.h"
+#include "Particles/ParticleSystemComponent.h"
+
+
 
 AACharacter::AACharacter()
 {
@@ -40,13 +33,13 @@ AACharacter::AACharacter()
 	CameraComp->SetupAttachment(SpringArmComp);
 	CameraComp->bUsePawnControlRotation = false;
 
-	// byå¼ 
-	//ç”Ÿå‘½ç»„ä»¶çš„è®¾ç½®
+	// byÕÅ
+	//ÉúÃü×é¼şµÄÉèÖÃ
 	HealthComponent = CreateDefaultSubobject<UHealthComponent>(TEXT("HealthComponent"));
 
 }
 
-// by å¼  è¾…åŠ©å‡½æ•° å»¶è¿Ÿæ‘§æ¯å¦å…‹
+// by ÕÅ ¸¨Öúº¯Êı ÑÓ³Ù´İ»ÙÌ¹¿Ë
 void AACharacter::DelayedDestroy()
 {
 	if (ActiveExplosionEffect)
@@ -54,14 +47,14 @@ void AACharacter::DelayedDestroy()
 		ActiveExplosionEffect->Deactivate();
 		ActiveExplosionEffect->DestroyComponent();
 	}
-	// é”€æ¯å¦å…‹
+	// Ïú»ÙÌ¹¿Ë
 	Destroy();
 	tankhead1->Destroy();
 	weapon->Destroy();
 }
 
-//by å¼ 
-//æ­»äº¡çˆ†ç‚¸ç‰¹æ•ˆ
+//by ÕÅ
+//ËÀÍö±¬Õ¨ÌØĞ§
 void AACharacter::DeadExplosionFunction()
 {
 	if (DeadExplosion)
@@ -69,6 +62,40 @@ void AACharacter::DeadExplosionFunction()
 		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), DeadExplosion, GetActorLocation());
 	}
 }
+
+
+void AACharacter::TakeDamage(float Amount)
+{
+	if (HealthComponent)
+	{
+		HealthComponent->TakeDamage(Amount);
+		if (HealthComponent->GetHealth() <= HealthComponent->MaxHealth / 2 && !ishurt)
+		{
+			ishurt = true;
+			// ²¥·ÅÁ£×ÓÌØĞ§²¢±£´æ¶ÔÁ£×ÓÌØĞ§×é¼şµÄÒıÓÃ
+			ActiveExplosionEffect = UGameplayStatics::SpawnEmitterAttached(ExplosionEffect, GetRootComponent());
+		}
+
+		if (isDead && !Dead)
+		{
+			Dead = true;
+
+			////Èç¹ûÒıÇæ×é¼ş´æÔÚ£¬ÔòÊä³ö×Ö·û´®
+			//if (GEngine)
+			//{
+			//	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("ÄãÉ±ËÀÁËÒ»ÃûµĞÈË"));
+			//}
+
+
+			GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &AACharacter::DeadExplosionFunction, 2.5f, false);
+
+			// ÉèÖÃ¶¨Ê±Æ÷£¬5ÃëºóÏú»ÙÌ¹¿Ë
+			GetWorld()->GetTimerManager().SetTimer(DestroyTimerHandle, this, &AACharacter::DelayedDestroy, 5.0f, false); // !!!!}
+		}
+	}
+}
+
+
 
 void AACharacter::EquipWeapon()
 {
@@ -103,9 +130,11 @@ void AACharacter::EquipWeapon()
 	//	weapon->SetOwner(this);
 
 	//}
+
+
 }
 
-//ï¿½ï¿½ï¿½ï¿½
+//¿ª»ğ
 
 void AACharacter::Fire()
 {
@@ -125,11 +154,11 @@ void AACharacter::Move(const FInputActionValue& Value)
 	{
 		FRotator rotation = GetActorRotation();
 		FRotator yawrotation(0, rotation.Yaw, 0);
-		//ï¿½Ãµï¿½ï¿½ï¿½É«ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½
+		//ÄÃµ½½ÇÉ«Ğı×ªºóµÄÕıÇ°·½
 		FVector forward = FRotationMatrix(yawrotation).GetUnitAxis(EAxis::X);
-		//ï¿½Ãµï¿½ï¿½ï¿½É«ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò·ï¿½
+		//ÄÃµ½½ÇÉ«Ğı×ªºóµÄÕıÓÒ·½
 		FVector right = FRotationMatrix(yawrotation).GetUnitAxis(EAxis::Y);
-		//ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½
+		//Ìí¼ÓÒÆ¶¯ÊäÈë
 		AddMovementInput(forward, moveDir.Y);
 		AddMovementInput(right, moveDir.X);
 
@@ -197,58 +226,4 @@ void AACharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 	}
 
 }
-
-void AACharacter::TakeDamage(float Amount)
-{
-	if (HealthComponent)
-	{
-		HealthComponent->TakeDamage(Amount);
-		if (HealthComponent->GetHealth() <= HealthComponent->MaxHealth / 2 && !ishurt)
-		{
-			ishurt = true;
-			// æ’­æ”¾ç²’å­ç‰¹æ•ˆå¹¶ä¿å­˜å¯¹ç²’å­ç‰¹æ•ˆç»„ä»¶çš„å¼•ç”¨
-			//è°ƒç”¨attacheedè®©ç²’å­ç‰¹æ•ˆè·Ÿéšç©å®¶ç§»åŠ¨
-			ActiveExplosionEffect = UGameplayStatics::SpawnEmitterAttached(ExplosionEffect, GetRootComponent());
-		}
-
-		if (isDead && !Dead)
-		{
-			Dead = true;
-
-			//æ­»äº¡ä»¥åæ–­å¼€è¡Œä¸ºæ ‘
-			StopMove();
-
-			//å¦‚æœå¼•æ“ç»„ä»¶å­˜åœ¨ï¼Œåˆ™è¾“å‡ºå­—ç¬¦ä¸²
-			if (GEngine)
-			{
-				GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("ä½ æ€æ­»äº†ä¸€åæ•Œäºº"));
-			}
-
-
-			GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &AACharacter::DeadExplosionFunction, 0.5f, false);
-			
-			GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &AACharacter::DeadExplosionFunction, 2.0f, false);
-			
-			GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &AACharacter::DeadExplosionFunction, 4.5f, false);
-			
-			GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &AACharacter::DeadExplosionFunction, 6.0f, false);
-
-
-			// è®¾ç½®å®šæ—¶å™¨ï¼Œ30ç§’åé”€æ¯å¦å…‹
-			GetWorld()->GetTimerManager().SetTimer(DestroyTimerHandle, this, &AACharacter::DelayedDestroy,30.0f, false); // !!!!}
-		}
-	}
-}
-
-void AACharacter::StopMove()
-{
-	AAIController* controller = Cast<AAIController>(GetController());
-	
-	if (controller){
-		//æ¸…é™¤è¡Œä¸ºæ ‘
-		controller->BrainComponent->Cleanup();
-	}
-
-}
-
 

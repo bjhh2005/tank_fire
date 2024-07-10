@@ -6,6 +6,7 @@
 #include"MyActor.h"
 #include"ACharacter.h"
 #include"Perception/AISense_Sight.h"
+#include"myWheeledVehiclePawn.h"
 
 AActor* UEnemyAIPerceptionComponent::GetPerceptionPlayer()
 {
@@ -26,15 +27,14 @@ AActor* UEnemyAIPerceptionComponent::GetPerceptionPlayer()
 	for (AActor* currentActor : percptionActors)
 	{
 
-		//�������������
-
-		AMyActor* player = Cast<AMyActor>(currentActor);
+		AWheeledVehiclePawn* player = Cast<AWheeledVehiclePawn>(currentActor);
+		//AACharacter* player = Cast<AACharacter>(currentActor);
 		//AMyActor* me = GetWorld()->SpawnActor<AMyActor>(MeClass);
 		
 		if (player)
 		{
 			
-				UE_LOG(LogTemp, Display, TEXT("see you again"));
+				//UE_LOG(LogTemp, Display, TEXT("see you again"));
 				float distance = (player->GetActorLocation() - pawn->GetActorLocation()).Size();
 				if (distance < bastDistance)
 					bastDistance = distance;

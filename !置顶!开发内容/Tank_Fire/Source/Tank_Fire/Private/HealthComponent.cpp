@@ -1,10 +1,10 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-
-#include "ACharacter.h"
 #include "BaseCharacter.h"
+#include"ACharacter.h"
 #include "HealthComponent.h"
+#include"myWheeledVehiclePawn.h"
 
 // Sets default values for this component's properties
 UHealthComponent::UHealthComponent()
@@ -29,33 +29,27 @@ void UHealthComponent::BeginPlay()
 void UHealthComponent::TakeDamage(float Amount)
 {
 	if (health  >  0){
-		health -= Amount;
+		health -= HeatHealth;
 		UE_LOG(LogTemp, Display, TEXT("Character Damage Amout = %f, Health = %f"), Amount, health);
 		if (health <= 0)
 		{
 			//获取组件的拥有者
 			ABaseCharacter* character1 = Cast<ABaseCharacter>(GetOwner());
 			AACharacter* character2 = Cast<AACharacter>(GetOwner());
-
-			if (character1)
-			{
-				//血量设置为0
-				health = 0;
-				//播报
-				UE_LOG(LogTemp, Display, TEXT("Character Death"));
-				//角色死亡
-				character1->isDead = true;
-			}
+			AmyWheeledVehiclePawn* character3 = Cast<AmyWheeledVehiclePawn>(GetOwner());
+			//血量设置为0
+			health = 0;
+			//播报
+			//UE_LOG(LogTemp, Display, TEXT("Character Death"));
+			//角色死亡
+			if(character1)
+			character1->isDead = true;
 
 			if (character2)
-			{
-				//血量设置为0
-					health = 0;
-				//播报
-				UE_LOG(LogTemp, Display, TEXT("Character Death"));
-				//角色死亡
 				character2->isDead = true;
-			}
+
+			if (character3)
+				character3->isDead = true;
 		}
 	}
 
