@@ -21,8 +21,12 @@ AWeaponBullet::AWeaponBullet()
 
 	MovementComponent = CreateDefaultSubobject<UProjectileMovementComponent>("MovementComponent");
 
+	//设置特效组件
+	Bu_EmitterComponent = CreateDefaultSubobject<UParticleSystemComponent>("Bu_EffectComponent");
+	Bu_EmitterComponent->SetupAttachment(RootComponent);
 
-
+	// 设置初始状态为不激活
+	Bu_EmitterComponent->bAutoActivate = false;
 }
 
 // Called when the game starts or when spawned
@@ -38,11 +42,25 @@ void AWeaponBullet::BeginPlay()
 void AWeaponBullet::OnABeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	AmyWheeledVehiclePawn* bbb = Cast<AmyWheeledVehiclePawn>(OtherActor);
-	
+
 	if (bbb) {
-		//UE_LOG(LogTemp, Display, TEXT("destroy~~~~~~~~~~~"));
+		UE_LOG(LogTemp, Display, TEXT("destroy~~~~~~~~~~~"));
 		bbb->TakeDamage(HeatHealth);
-		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), Bu_Emitter, this->GetActorTransform());
+		
+		//命中位置生成音效
+		UGameplayStatics::PlaySoundAtLocation(this, ExplosionSound, GetActorLocation());
+
+		// 在命中位置生成特效
+		if (Bu_EmitterComponent && Bu_EmitterComponent->Template) {
+			// 创建临时特效组件
+			UParticleSystemComponent* TempEmitter = UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), Bu_EmitterComponent->Template, GetActorTransform());
+			if (TempEmitter) {
+				// 复制蓝图中的特效调整
+				TempEmitter->SetTemplate(Bu_EmitterComponent->Template);
+				TempEmitter->Activate(true);
+			}
+		}
+		
 		Destroy();
 	}
 }
@@ -51,8 +69,6 @@ void AWeaponBullet::OnABeginOverlap(UPrimitiveComponent* OverlappedComponent, AA
 void AWeaponBullet::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
-	
 
 }
 

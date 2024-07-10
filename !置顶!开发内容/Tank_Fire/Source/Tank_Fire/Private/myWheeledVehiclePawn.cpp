@@ -2,9 +2,10 @@
 
 
 #include "myWheeledVehiclePawn.h"
-//µ¼ÈëÉúÃü×é¼şÍ·ÎÄ¼ş
+
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·ï¿½Ä¼ï¿½
 #include "HealthComponent.h"
-//µ¼ÈëÁ£×ÓÏµÍ³Í·ÎÄ¼ş
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÏµÍ³Í·ï¿½Ä¼ï¿½
 #include "Particles/ParticleSystem.h"
 #include "Kismet/GameplayStatics.h"
 #include "Components/StaticMeshComponent.h"
@@ -14,17 +15,15 @@
 AmyWheeledVehiclePawn::AmyWheeledVehiclePawn()
 {
 
-	SphereCollision = CreateDefaultSubobject<USphereComponent>("SphereComponent");
-	SphereCollision->InitSphereRadius(500.0f);
-	SetRootComponent(SphereCollision);
+	
 
-	//ÉúÃü×é¼şµÄÉèÖÃ
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	HealthComponent = CreateDefaultSubobject<UHealthComponent>(TEXT("HealthComponent"));
 
 }
 
 
-// by ÕÅ ¸¨Öúº¯Êı ÑÓ³Ù´İ»ÙÌ¹¿Ë
+// by ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ó³Ù´İ»ï¿½Ì¹ï¿½ï¿½
 void AmyWheeledVehiclePawn::DelayedDestroy()
 {
 	if (ActiveExplosionEffect)
@@ -32,12 +31,12 @@ void AmyWheeledVehiclePawn::DelayedDestroy()
 		ActiveExplosionEffect->Deactivate();
 		ActiveExplosionEffect->DestroyComponent();
 	}
-	// Ïú»ÙÌ¹¿Ë
+	// ï¿½ï¿½ï¿½ï¿½Ì¹ï¿½ï¿½
 	Destroy();
 }
 
-//by ÕÅ
-//ËÀÍö±¬Õ¨ÌØĞ§
+//by ï¿½ï¿½
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¨ï¿½ï¿½Ğ§
 void AmyWheeledVehiclePawn::DeadExplosionFunction()
 {
 	if (DeadExplosion)
@@ -55,7 +54,7 @@ void AmyWheeledVehiclePawn::TakeDamage(float Amount)
 		if (HealthComponent->GetHealth() <= HealthComponent->MaxHealth / 2 && !ishurt)
 		{
 			ishurt = true;
-			// ²¥·ÅÁ£×ÓÌØĞ§²¢±£´æ¶ÔÁ£×ÓÌØĞ§×é¼şµÄÒıÓÃ
+			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			ActiveExplosionEffect = UGameplayStatics::SpawnEmitterAttached(ExplosionEffect, GetRootComponent());
 		}
 
@@ -63,17 +62,16 @@ void AmyWheeledVehiclePawn::TakeDamage(float Amount)
 		{
 			Dead = true;
 
-			////Èç¹ûÒıÇæ×é¼ş´æÔÚ£¬ÔòÊä³ö×Ö·û´®
-			//if (GEngine)
-			//{
-			//	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("ÄãÉ±ËÀÁËÒ»ÃûµĞÈË"));
-			//}
+			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+			if (GEngine)
+			{
+				GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("èœ å°±å¤šç»ƒ ç©ä¸èµ· å°±åˆ«ç©"));
+			}
 
-
-			GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &AmyWheeledVehiclePawn::DeadExplosionFunction, 2.5f, false);
-
-			// ÉèÖÃ¶¨Ê±Æ÷£¬5ÃëºóÏú»ÙÌ¹¿Ë
-			GetWorld()->GetTimerManager().SetTimer(DestroyTimerHandle, this, &AmyWheeledVehiclePawn::DelayedDestroy, 5.0f, false); // !!!!}
+			//æ’­æ”¾ç‰¹æ•ˆ
+			GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &AmyWheeledVehiclePawn::DeadExplosionFunction, 0.0f, false);
+			//é”€æ¯è§’è‰²
+			DelayedDestroy();
 		}
 	}
 }

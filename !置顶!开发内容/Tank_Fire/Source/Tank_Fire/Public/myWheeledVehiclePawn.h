@@ -8,7 +8,8 @@
 #include "myWheeledVehiclePawn.generated.h"
 
 class UHealthComponent;
-class USphereComponent;
+
+
 
 /**
  * 
@@ -17,13 +18,11 @@ UCLASS()
 class TANK_FIRE_API AmyWheeledVehiclePawn : public AWheeledVehiclePawn
 {
 	GENERATED_BODY()
+	
 public:
 	AmyWheeledVehiclePawn();
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
-	USphereComponent* SphereCollision;
-
-	//by�?
+	//by�?
 //伤害函数
 	UFUNCTION(BlueprintCallable)
 	void TakeDamage(float Amount);
@@ -36,7 +35,7 @@ public:
 
 protected:
 
-	//�������
+	//�������
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "HealthComponent")
 	UHealthComponent* HealthComponent;
 
@@ -45,11 +44,11 @@ protected:
 	UPROPERTY(EditAnywhere, Category = "Emitter")
 	UParticleSystem* ExplosionEffect;
 
-	// 特效组件的引�?
+	// 特效组件的引�?
 	UPROPERTY()
 	UParticleSystemComponent* ActiveExplosionEffect;
 
-	//辅助函数 帮助销�?
+	//辅助函数 帮助销�?
 	void DelayedDestroy();
 
 	//特效设置
@@ -59,14 +58,12 @@ protected:
 	//设置生命
 	float health;
 
-	// 计时器句�?
+	// 计时器句�?
 	FTimerHandle TimerHandle;
 
-	// 定时器句�?
+	// 定时器句�?
 	FTimerHandle DestroyTimerHandle;
 
 	//死亡爆炸
 	void DeadExplosionFunction();
-
-	
 };

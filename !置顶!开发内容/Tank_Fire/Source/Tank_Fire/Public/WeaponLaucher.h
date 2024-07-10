@@ -19,10 +19,6 @@ class TANK_FIRE_API AWeaponLaucher : public ABaseWeapon
 protected:
 	UPROPERTY(EditAnywhere,BlueprintReadOnly)
 	TSubclassOf<AWeaponBullet>WeaponBulletClass;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Emitter")
-	UParticleSystem* FX_Emitter;	
-	
 	
 public:
 	virtual void Fire() override;

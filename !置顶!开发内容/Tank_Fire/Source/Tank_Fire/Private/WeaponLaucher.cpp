@@ -3,8 +3,6 @@
 
 #include "WeaponLaucher.h"
 #include"WeaponBullet.h"
-#include"Particles/ParticleSystemComponent.h"
-#include"Runtime/Engine/Classes/Kismet/GameplayStatics.h"
 
 
 void AWeaponLaucher::Fire()
@@ -17,13 +15,8 @@ void AWeaponLaucher::Fire()
 
 	AWeaponBullet* bullet=GetWorld()->SpawnActorDeferred<AWeaponBullet>(WeaponBulletClass,transform);
 
-	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), FX_Emitter, WeaponMesh->GetSocketTransform("bulletsocket"));
-
 	if (bullet)
 	{
 		bullet->FinishSpawning(transform);
 	}
-
-	
-
 }
