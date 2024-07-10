@@ -12,3 +12,5 @@ void AEnemyCharacter::BeginPlay()
 	Super::BeginPlay();
 
 }
+
+

@@ -24,12 +24,10 @@ protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 
-	//最大生命值
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Health")
-	float MaxHealth = 100;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Health")
-	float HeatHealth = 100;
+	// 特效组件的引用
+	UPROPERTY()
+	UParticleSystemComponent* ActiveExplosionEffect;
 
 
 private:
@@ -37,6 +35,9 @@ private:
 	float health;
 
 public:	
+	//最大生命值
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Health")
+	float MaxHealth = 100;
 
 	float GetHealth() { return health; }
 

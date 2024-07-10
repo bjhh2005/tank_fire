@@ -11,6 +11,11 @@
 #include "Components/StaticMeshComponent.h"
 #include "Particles/ParticleSystemComponent.h"
 
+//AI组件
+#include "AIController.h"
+//包含清除行为树的组件
+#include "BrainComponent.h"
+
 
 //其他
 #include"GameFramework/SpringArmComponent.h"
@@ -202,12 +207,16 @@ void AACharacter::TakeDamage(float Amount)
 		{
 			ishurt = true;
 			// 播放粒子特效并保存对粒子特效组件的引用
+			//调用attacheed让粒子特效跟随玩家移动
 			ActiveExplosionEffect = UGameplayStatics::SpawnEmitterAttached(ExplosionEffect, GetRootComponent());
 		}
 
 		if (isDead && !Dead)
 		{
 			Dead = true;
+
+			//死亡以后断开行为树
+			StopMove();
 
 			//如果引擎组件存在，则输出字符串
 			if (GEngine)
@@ -216,12 +225,30 @@ void AACharacter::TakeDamage(float Amount)
 			}
 
 
-			GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &AACharacter::DeadExplosionFunction, 2.5f, false);
+			GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &AACharacter::DeadExplosionFunction, 0.5f, false);
+			
+			GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &AACharacter::DeadExplosionFunction, 2.0f, false);
+			
+			GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &AACharacter::DeadExplosionFunction, 4.5f, false);
+			
+			GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &AACharacter::DeadExplosionFunction, 6.0f, false);
 
-			// 设置定时器，5秒后销毁坦克
-			GetWorld()->GetTimerManager().SetTimer(DestroyTimerHandle, this, &AACharacter::DelayedDestroy, 5.0f, false); // !!!!}
+
+			// 设置定时器，30秒后销毁坦克
+			GetWorld()->GetTimerManager().SetTimer(DestroyTimerHandle, this, &AACharacter::DelayedDestroy,30.0f, false); // !!!!}
 		}
 	}
+}
+
+void AACharacter::StopMove()
+{
+	AAIController* controller = Cast<AAIController>(GetController());
+	
+	if (controller){
+		//清除行为树
+		controller->BrainComponent->Cleanup();
+	}
+
 }
 
 
