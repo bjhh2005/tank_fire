@@ -30,11 +30,12 @@ protected:
 	UParticleSystemComponent* ActiveExplosionEffect;
 
 
-private:
-
-	float health;
 
 public:	
+
+	//当前生命值
+	float health;
+
 	//最大生命值
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Health")
 	float MaxHealth = 100;
@@ -49,4 +50,11 @@ public:
 	//获取生命值进度
 	UFUNCTION(BlueprintCallable)
 	float GetHealthProgress(){ return health / MaxHealth; }
+	
+	bool Isrecovery = false;
+
+	//恢复生命值
+	void Recovery() { health = MaxHealth;}
+	
+
 };

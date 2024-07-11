@@ -56,8 +56,16 @@ void AACharacter::DelayedDestroy()
 	}
 	// 销毁坦克
 	Destroy();
-	tankhead1->Destroy();
-	weapon->Destroy();
+
+	if (tankhead1)
+	{
+		tankhead1->Destroy();
+	}
+	// 检查 weapon 是否为空
+	if (weapon)
+	{
+		weapon->Destroy();
+	}
 }
 
 //by 张
@@ -224,17 +232,11 @@ void AACharacter::TakeDamage(float Amount)
 			}
 
 
-			GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &AACharacter::DeadExplosionFunction, 0.5f, false);
-			
-			GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &AACharacter::DeadExplosionFunction, 2.0f, false);
-			
-			GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &AACharacter::DeadExplosionFunction, 4.5f, false);
-			
 			GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &AACharacter::DeadExplosionFunction, 6.0f, false);
 
 
 			// 设置定时器，30秒后销毁坦克
-			GetWorld()->GetTimerManager().SetTimer(DestroyTimerHandle, this, &AACharacter::DelayedDestroy,30.0f, false); // !!!!}
+			GetWorld()->GetTimerManager().SetTimer(DestroyTimerHandle, this, &AACharacter::DelayedDestroy,10.0f, false); // !!!!}
 		}
 	}
 }

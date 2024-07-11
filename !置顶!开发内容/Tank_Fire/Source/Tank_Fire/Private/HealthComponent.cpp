@@ -1,7 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-
 #include "ACharacter.h"
 #include "BaseCharacter.h"
 #include "HealthComponent.h"
@@ -75,11 +74,10 @@ void UHealthComponent::TakeDamage(float Amount)
 }
 
 
+
 // Called every frame
 void UHealthComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-
-	// ...
 }
 

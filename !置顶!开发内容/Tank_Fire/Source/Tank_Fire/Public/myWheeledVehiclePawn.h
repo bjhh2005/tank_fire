@@ -22,8 +22,8 @@ class TANK_FIRE_API AmyWheeledVehiclePawn : public AWheeledVehiclePawn
 public:
 	AmyWheeledVehiclePawn();
 
-	//by�?
-//伤害函数
+	//by Zhanng
+	//伤害函数
 	UFUNCTION(BlueprintCallable)
 	void TakeDamage(float Amount);
 
@@ -55,8 +55,9 @@ protected:
 	UPROPERTY(EditAnywhere, Category = "Emitter")
 	UParticleSystem* DeadExplosion;
 
-	//设置生命
-	float health;
+	//声音设置
+	UPROPERTY(EditAnywhere, Category = "修复声音")
+	USoundBase* FixSound;
 
 	// 计时器句�?
 	FTimerHandle TimerHandle;
@@ -66,4 +67,12 @@ protected:
 
 	//死亡爆炸
 	void DeadExplosionFunction();
+
+	//生命值恢复速度
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Health")
+	float RecoveryHealthRate = 0.3;
+
+	//恢复生命值
+	UFUNCTION(BlueprintCallable)
+	void RecoveryHealth();
 };

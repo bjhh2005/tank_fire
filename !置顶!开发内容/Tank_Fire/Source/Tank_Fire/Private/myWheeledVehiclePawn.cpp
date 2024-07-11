@@ -14,13 +14,14 @@
 
 AmyWheeledVehiclePawn::AmyWheeledVehiclePawn()
 {
-
-	
-
 	//�������������
 	HealthComponent = CreateDefaultSubobject<UHealthComponent>(TEXT("HealthComponent"));
 
+
+	//特效组件的绑定
 }
+
+
 
 
 // by �� �������� �ӳٴݻ�̹��
@@ -45,12 +46,30 @@ void AmyWheeledVehiclePawn::DeadExplosionFunction()
 	}
 }
 
+void AmyWheeledVehiclePawn::RecoveryHealth()
+{
+	//重设状态
+	ishurt = false;
+
+	//爆炸的时候播放声音
+	UGameplayStatics::PlaySoundAtLocation(this, FixSound, GetActorLocation());
+	//恢复血量
+	HealthComponent->Recovery();
+
+	//清除特效
+	if(ActiveExplosionEffect)
+		ActiveExplosionEffect->Deactivate();
+
+	
+}
+
 
 void AmyWheeledVehiclePawn::TakeDamage(float Amount)
 {
 	if (HealthComponent)
 	{
 		HealthComponent->TakeDamage(Amount);
+
 		if (HealthComponent->GetHealth() <= HealthComponent->MaxHealth / 2 && !ishurt)
 		{
 			ishurt = true;
@@ -75,3 +94,4 @@ void AmyWheeledVehiclePawn::TakeDamage(float Amount)
 		}
 	}
 }
+
