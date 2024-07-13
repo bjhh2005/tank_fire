@@ -222,6 +222,8 @@ void AACharacter::TakeDamage(float Amount)
 		{
 			Dead = true;
 
+			OnDeath.Broadcast();
+
 			//死亡以后断开行为树
 			StopMove();
 

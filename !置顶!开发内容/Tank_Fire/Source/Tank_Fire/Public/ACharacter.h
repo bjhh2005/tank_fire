@@ -24,6 +24,9 @@ class ABaseWeapon;
 class ATankHead1;
 class USphereComponent;
 
+//定义死亡事件
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDeath);
+
 UCLASS()
 class TANK_FIRE_API AACharacter : public ACharacter
 {
@@ -75,6 +78,10 @@ protected:
 
 	//死亡爆炸
 	void DeadExplosionFunction();
+
+	//死亡事件
+	UPROPERTY(BlueprintAssignable, Category = "Events")
+	FOnDeath OnDeath;
 
 	//---------------------------------------------------------------------------
 

@@ -34,6 +34,7 @@ protected:
 public:	
 
 	//当前生命值
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Health")
 	float health;
 
 	//最大生命值

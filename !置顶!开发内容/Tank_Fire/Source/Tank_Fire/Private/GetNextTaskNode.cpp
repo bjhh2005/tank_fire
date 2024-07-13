@@ -14,18 +14,18 @@ UGetNextTaskNode::UGetNextTaskNode()
 
 EBTNodeResult::Type UGetNextTaskNode::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
 {
-	//ÄÃµ½aicontroller
+	//ï¿½Ãµï¿½aicontroller
 
 	AAIController* controller = OwnerComp.GetAIOwner();
 	UBlackboardComponent* blackboard = OwnerComp.GetBlackboardComponent();
 
 	if (!controller || !blackboard)return EBTNodeResult::Failed;
 
-	//ÄÃµ½aicontroller¶ÔÓ¦µÄ½ÇÉ«
+	//ï¿½Ãµï¿½aicontrollerï¿½ï¿½Ó¦ï¿½Ä½ï¿½É«
 	APawn* pawn = controller->GetPawn();
 	if (!pawn)return EBTNodeResult::Failed;
 
-	//ÄÃµ½µ¼º½ÏµÍ³
+	//ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ÏµÍ³
 	UNavigationSystemV1* navSystem=  FNavigationSystem::GetCurrent<UNavigationSystemV1>(this);
 	if (!navSystem)return  EBTNodeResult::Failed;
 
