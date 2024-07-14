@@ -210,6 +210,12 @@ void AACharacter::TakeDamage(float Amount)
 	if (HealthComponent)
 	{
 		HealthComponent->TakeDamage(Amount);
+
+		if (HealthComponent != 0)
+		{
+			OnHit.Broadcast();
+		}
+	
 		if (HealthComponent->GetHealth() <= HealthComponent->MaxHealth / 2 && !ishurt)
 		{
 			ishurt = true;
@@ -222,6 +228,7 @@ void AACharacter::TakeDamage(float Amount)
 		{
 			Dead = true;
 
+			//触发死亡事件
 			OnDeath.Broadcast();
 
 			//死亡以后断开行为树

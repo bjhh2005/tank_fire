@@ -83,6 +83,10 @@ protected:
 	UPROPERTY(BlueprintAssignable, Category = "Events")
 	FOnDeath OnDeath;
 
+	//受伤事件
+	UPROPERTY(BlueprintAssignable, Category = "Events")
+	FOnDeath OnHit;
+
 	//---------------------------------------------------------------------------
 
 
