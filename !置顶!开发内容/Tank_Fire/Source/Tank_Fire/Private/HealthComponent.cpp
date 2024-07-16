@@ -22,22 +22,31 @@ void UHealthComponent::BeginPlay()
 {
 	Super::BeginPlay();
 
+	//游戏开始时 初始化血量 获取最大值
 	health = MaxHealth;
 	
 }
 
+//
 void UHealthComponent::TakeDamage(float Amount)
 {
+	//如果血量大于0
 	if (health  >  0){
+		//造成伤害
 		health -= Amount;
-		UE_LOG(LogTemp, Display, TEXT("Character Damage Amout = %f, Health = %f"), Amount, health);
+		//测试使用 用于显示角色伤害
+		//UE_LOG(LogTemp, Display, TEXT("Character Damage Amout = %f, Health = %f"), Amount, health);
+		
+		//如果血量小于等于0
 		if (health <= 0)
 		{
+			//角色死亡
 			//获取组件的拥有者
 			ABaseCharacter* character1 = Cast<ABaseCharacter>(GetOwner());
 			AACharacter* character2 = Cast<AACharacter>(GetOwner());
 			AmyWheeledVehiclePawn* character3 = Cast<AmyWheeledVehiclePawn>(GetOwner());
 
+			//判断伤害对象
 			if (character1)
 			{
 				//血量设置为0

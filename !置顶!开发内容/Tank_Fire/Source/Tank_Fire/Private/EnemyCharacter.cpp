@@ -3,10 +3,12 @@
 
 #include "EnemyCharacter.h"
 
+// Called when the game starts or when spawned
 AEnemyCharacter::AEnemyCharacter()
 {
 }
 
+// called when the game starts
 void AEnemyCharacter::BeginPlay()
 {
 	Super::BeginPlay();

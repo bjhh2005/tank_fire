@@ -1,0 +1,533 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\WeaponLaucher.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Private\\WeaponLaucher.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\WeaponLaucher.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Public\\WeaponLaucher.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\WeaponBullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Private\\WeaponBullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\WeaponBullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Public\\WeaponBullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\TankHead1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Private\\TankHead1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\TankHead1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Public\\TankHead1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\myWheeledVehiclePawn.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Public\\myWheeledVehiclePawn.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\myWheeledVehiclePawn.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Private\\myWheeledVehiclePawn.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\ACharacter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Private\\ACharacter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\ACharacter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Public\\ACharacter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\MyActor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Private\\MyActor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\BaseBullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Private\\BaseBullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\MyActor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Public\\MyActor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\HealthComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Public\\HealthComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\GetNextTaskNode.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Public\\GetNextTaskNode.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\HealthComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Private\\HealthComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\BaseWeapon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Public\\BaseWeapon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\EnemyAIController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Public\\EnemyAIController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\EnemyAIPerceptionComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Public\\EnemyAIPerceptionComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\desk_top\\Tank_Fire\\Source\\Tank_Fire\\Public\\ACharacter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\desk_top\\Tank_Fire\\Source\\Tank_Fire\\Public\\BaseBullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\GetNextTaskNode.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Private\\GetNextTaskNode.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\EnemyCharacter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Private\\EnemyCharacter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\EnemyCharacter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Public\\EnemyCharacter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\BaseCharacter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Public\\BaseCharacter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\BaseCharacter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Private\\BaseCharacter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\EnemyAIPerceptionComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Private\\EnemyAIPerceptionComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\EnemyAIController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Private\\EnemyAIController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\desk_top\\Tank_Fire\\Source\\Tank_FireEditor.Target.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\BaseBullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Public\\BaseBullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WeaponLaucher.cpp",
+              "DocumentMoniker": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\WeaponLaucher.cpp",
+              "RelativeDocumentMoniker": "Private\\WeaponLaucher.cpp",
+              "ToolTip": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\WeaponLaucher.cpp",
+              "RelativeToolTip": "Private\\WeaponLaucher.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-16T07:09:29.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WeaponBullet.cpp",
+              "DocumentMoniker": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\WeaponBullet.cpp",
+              "RelativeDocumentMoniker": "Private\\WeaponBullet.cpp",
+              "ToolTip": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\WeaponBullet.cpp",
+              "RelativeToolTip": "Private\\WeaponBullet.cpp",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAGgAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-16T06:29:32.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TankHead1.cpp",
+              "DocumentMoniker": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\TankHead1.cpp",
+              "RelativeDocumentMoniker": "Private\\TankHead1.cpp",
+              "ToolTip": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\TankHead1.cpp",
+              "RelativeToolTip": "Private\\TankHead1.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADMAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-16T06:29:30.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "myWheeledVehiclePawn.cpp",
+              "DocumentMoniker": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\myWheeledVehiclePawn.cpp",
+              "RelativeDocumentMoniker": "Private\\myWheeledVehiclePawn.cpp",
+              "ToolTip": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\myWheeledVehiclePawn.cpp",
+              "RelativeToolTip": "Private\\myWheeledVehiclePawn.cpp",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAAGsAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-16T03:52:25.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BaseBullet.cpp",
+              "DocumentMoniker": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\BaseBullet.cpp",
+              "RelativeDocumentMoniker": "Private\\BaseBullet.cpp",
+              "ToolTip": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\BaseBullet.cpp",
+              "RelativeToolTip": "Private\\BaseBullet.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-16T03:48:58.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WeaponLaucher.h",
+              "DocumentMoniker": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\WeaponLaucher.h",
+              "RelativeDocumentMoniker": "Public\\WeaponLaucher.h",
+              "ToolTip": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\WeaponLaucher.h",
+              "RelativeToolTip": "Public\\WeaponLaucher.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-16T03:48:48.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeaponBullet.h",
+              "DocumentMoniker": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\WeaponBullet.h",
+              "RelativeDocumentMoniker": "Public\\WeaponBullet.h",
+              "ToolTip": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\WeaponBullet.h",
+              "RelativeToolTip": "Public\\WeaponBullet.h",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAEMAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-16T03:48:47.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BaseBullet.h",
+              "DocumentMoniker": "E:\\desk_top\\Tank_Fire\\Source\\Tank_Fire\\Public\\BaseBullet.h",
+              "ToolTip": "E:\\desk_top\\Tank_Fire\\Source\\Tank_Fire\\Public\\BaseBullet.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-16T02:28:28.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ACharacter.h",
+              "DocumentMoniker": "E:\\desk_top\\Tank_Fire\\Source\\Tank_Fire\\Public\\ACharacter.h",
+              "ToolTip": "E:\\desk_top\\Tank_Fire\\Source\\Tank_Fire\\Public\\ACharacter.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvxAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-16T02:28:17.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HealthComponent.cpp",
+              "DocumentMoniker": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\HealthComponent.cpp",
+              "RelativeDocumentMoniker": "Private\\HealthComponent.cpp",
+              "ToolTip": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\HealthComponent.cpp",
+              "RelativeToolTip": "Private\\HealthComponent.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-16T02:23:33.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "BaseCharacter.cpp",
+              "DocumentMoniker": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\BaseCharacter.cpp",
+              "RelativeDocumentMoniker": "Private\\BaseCharacter.cpp",
+              "ToolTip": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\BaseCharacter.cpp",
+              "RelativeToolTip": "Private\\BaseCharacter.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-16T01:24:22.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "GetNextTaskNode.cpp",
+              "DocumentMoniker": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\GetNextTaskNode.cpp",
+              "RelativeDocumentMoniker": "Private\\GetNextTaskNode.cpp",
+              "ToolTip": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\GetNextTaskNode.cpp",
+              "RelativeToolTip": "Private\\GetNextTaskNode.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-16T01:20:29.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "EnemyCharacter.cpp",
+              "DocumentMoniker": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\EnemyCharacter.cpp",
+              "RelativeDocumentMoniker": "Private\\EnemyCharacter.cpp",
+              "ToolTip": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\EnemyCharacter.cpp",
+              "RelativeToolTip": "Private\\EnemyCharacter.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwYAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-16T01:20:17.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "EnemyAIPerceptionComponent.cpp",
+              "DocumentMoniker": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\EnemyAIPerceptionComponent.cpp",
+              "RelativeDocumentMoniker": "Private\\EnemyAIPerceptionComponent.cpp",
+              "ToolTip": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\EnemyAIPerceptionComponent.cpp",
+              "RelativeToolTip": "Private\\EnemyAIPerceptionComponent.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-16T01:02:14.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MyActor.cpp",
+              "DocumentMoniker": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\MyActor.cpp",
+              "RelativeDocumentMoniker": "Private\\MyActor.cpp",
+              "ToolTip": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\MyActor.cpp",
+              "RelativeToolTip": "Private\\MyActor.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-16T00:58:12.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Tank_FireEditor.Target.cs",
+              "DocumentMoniker": "E:\\desk_top\\Tank_Fire\\Source\\Tank_FireEditor.Target.cs",
+              "ToolTip": "E:\\desk_top\\Tank_Fire\\Source\\Tank_FireEditor.Target.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T00:53:08.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TankHead1.h",
+              "DocumentMoniker": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\TankHead1.h",
+              "RelativeDocumentMoniker": "Public\\TankHead1.h",
+              "ToolTip": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\TankHead1.h",
+              "RelativeToolTip": "Public\\TankHead1.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-16T00:50:56.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "myWheeledVehiclePawn.h",
+              "DocumentMoniker": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\myWheeledVehiclePawn.h",
+              "RelativeDocumentMoniker": "Public\\myWheeledVehiclePawn.h",
+              "ToolTip": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\myWheeledVehiclePawn.h",
+              "RelativeToolTip": "Public\\myWheeledVehiclePawn.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-16T00:50:55.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MyActor.h",
+              "DocumentMoniker": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\MyActor.h",
+              "RelativeDocumentMoniker": "Public\\MyActor.h",
+              "ToolTip": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\MyActor.h",
+              "RelativeToolTip": "Public\\MyActor.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-16T00:50:50.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HealthComponent.h",
+              "DocumentMoniker": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\HealthComponent.h",
+              "RelativeDocumentMoniker": "Public\\HealthComponent.h",
+              "ToolTip": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\HealthComponent.h",
+              "RelativeToolTip": "Public\\HealthComponent.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGwAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-16T00:50:45.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GetNextTaskNode.h",
+              "DocumentMoniker": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\GetNextTaskNode.h",
+              "RelativeDocumentMoniker": "Public\\GetNextTaskNode.h",
+              "ToolTip": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\GetNextTaskNode.h",
+              "RelativeToolTip": "Public\\GetNextTaskNode.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-16T00:50:42.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "EnemyCharacter.h",
+              "DocumentMoniker": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\EnemyCharacter.h",
+              "RelativeDocumentMoniker": "Public\\EnemyCharacter.h",
+              "ToolTip": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\EnemyCharacter.h",
+              "RelativeToolTip": "Public\\EnemyCharacter.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvxwAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-16T00:50:25.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "BaseCharacter.h",
+              "DocumentMoniker": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\BaseCharacter.h",
+              "RelativeDocumentMoniker": "Public\\BaseCharacter.h",
+              "ToolTip": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\BaseCharacter.h",
+              "RelativeToolTip": "Public\\BaseCharacter.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwsAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-16T00:45:19.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EnemyAIPerceptionComponent.h",
+              "DocumentMoniker": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\EnemyAIPerceptionComponent.h",
+              "RelativeDocumentMoniker": "Public\\EnemyAIPerceptionComponent.h",
+              "ToolTip": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\EnemyAIPerceptionComponent.h",
+              "RelativeToolTip": "Public\\EnemyAIPerceptionComponent.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-16T00:45:01.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "EnemyAIController.cpp",
+              "DocumentMoniker": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\EnemyAIController.cpp",
+              "RelativeDocumentMoniker": "Private\\EnemyAIController.cpp",
+              "ToolTip": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\EnemyAIController.cpp",
+              "RelativeToolTip": "Private\\EnemyAIController.cpp",
+              "ViewState": "AQIAACIAAAAAAAAAAAAAACQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-16T00:38:32.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BaseWeapon.h",
+              "DocumentMoniker": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\BaseWeapon.h",
+              "RelativeDocumentMoniker": "Public\\BaseWeapon.h",
+              "ToolTip": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\BaseWeapon.h",
+              "RelativeToolTip": "Public\\BaseWeapon.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-16T00:36:59.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EnemyAIController.h",
+              "DocumentMoniker": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\EnemyAIController.h",
+              "RelativeDocumentMoniker": "Public\\EnemyAIController.h",
+              "ToolTip": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\EnemyAIController.h",
+              "RelativeToolTip": "Public\\EnemyAIController.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-16T00:36:26.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ACharacter.cpp",
+              "DocumentMoniker": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\ACharacter.cpp",
+              "RelativeDocumentMoniker": "Private\\ACharacter.cpp",
+              "ToolTip": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Private\\ACharacter.cpp",
+              "RelativeToolTip": "Private\\ACharacter.cpp",
+              "ViewState": "AQIAAOQAAAAAAAAAAAAAAPMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-16T00:36:19.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "BaseBullet.h",
+              "DocumentMoniker": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\BaseBullet.h",
+              "RelativeDocumentMoniker": "Public\\BaseBullet.h",
+              "ToolTip": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\BaseBullet.h",
+              "RelativeToolTip": "Public\\BaseBullet.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-15T14:35:38.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ACharacter.h",
+              "DocumentMoniker": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\ACharacter.h",
+              "RelativeDocumentMoniker": "Public\\ACharacter.h",
+              "ToolTip": "D:\\\u65B0\u5EFA\u6587\u4EF6\u5939 (2)\\GitHub\\tank_fire\\!\u7F6E\u9876!\u5F00\u53D1\u5185\u5BB9\\Tank_Fire\\Source\\Tank_Fire\\Public\\ACharacter.h",
+              "RelativeToolTip": "Public\\ACharacter.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-15T14:35:22.511Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

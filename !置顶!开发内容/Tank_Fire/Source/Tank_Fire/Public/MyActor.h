@@ -6,7 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "MyActor.generated.h"
 
-
+//设置碰撞体
 class USphereComponent;
 
 UCLASS()
@@ -24,6 +24,7 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	//初始化碰撞体
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	USphereComponent* SphereCollision;
 

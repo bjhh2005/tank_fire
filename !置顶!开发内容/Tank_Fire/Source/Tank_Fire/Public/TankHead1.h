@@ -2,10 +2,19 @@
 
 #pragma once
 
+
+ /*
+  *		作者：杨文韬
+  * 	日期：2024年7月9日
+  * 	版本：1.0
+  * 	更新功能：实现坦克头部的拼装
+  */
+
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "TankHead1.generated.h"
 
+//武器类的调用类
 class ABaseWeapon;
 
 UCLASS()
@@ -16,21 +25,15 @@ class TANK_FIRE_API ATankHead1 : public ACharacter
 public:
 	// Sets default values for this character's properties
 	ATankHead1();
+
+	// 装备武器
+	//参数：weapon：要装备的武器 WeaponClass：要装备武器的类
 	void Equipgun(ABaseWeapon* weapon, TSubclassOf<ABaseWeapon> WeaponClass);
 
-	//UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "TankHead1Component")
-	//USkeletalMeshComponent* TankHead1Mesh;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-
-
-	/*ABaseWeapon* weapon;
-
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "WeaponClass")
-	TSubclassOf<ABaseWeapon> WeaponClass;*/
-
-
 
 public:
 	// Called every frame
